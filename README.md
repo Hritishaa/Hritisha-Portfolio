@@ -71,7 +71,7 @@ Beyond academics, I’m a dancer, pianist, and an enthusiastic cook, constantly 
 
 ## 📫 Let’s Connect!
 - **Email**: hritisha.11@gmail.com  
-- **LinkedIn**: [linkedin.com/in/hritisha-sahota](https://linkedin.com/in/hritisha-sahota)  
+- **LinkedIn**: https://www.linkedin.com/in/hritishasahota/
 
 ---
 

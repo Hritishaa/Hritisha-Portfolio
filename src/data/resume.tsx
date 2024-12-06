@@ -8,7 +8,7 @@ export const DATA = {
   location: "Noida, India",
   locationLink: "https://maps.app.goo.gl/z54BJJCRs2WBzbNk9",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Creative mind with a passion for building connections and solving problems. DSA enthusiast, always exploring new ways to innovate and inspire!",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/pro.jpeg",
@@ -19,9 +19,8 @@ export const DATA = {
     "Node.js",
     "Python",
     "Go",
-    "Postgres",
     "Docker",
-    "Kubernetes",
+
     "Java",
     "C++",
   ],
@@ -30,19 +29,19 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "hritisha.11@gmail.com",
+    tel: "+91 9922931525",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/Hritishaa",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/hritishasahota/",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -62,7 +61,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "hritisha.11@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -146,43 +145,35 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
+      school: "Bennett University",
+      href: "https://www.bennett.edu.in",
+      degree: "BTech - CSE",
+      logoUrl: "/pro1.png",
+      start: "2022",
+      end: "2026",
     },
     {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
+      school: "Delhi Public School",
+      href: "https://dpsgrnoida.in/dpsgrnoida/default.asp",
+      degree: "Non-Medical",
+      logoUrl: "/pro2.png",
+      start: "2019",
       end: "2021",
     },
     {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
+      school: "Blue Ridge Public School",
+      href: "http://www.blueridgepublicschool.com",
+      degree: "School",
+      logoUrl: "/pro3.png",
+      start: "2011",
+      end: "2019",
     },
   ],
   projects: [
     {
-      title: "Chat Collect",
+      title: "MoodSync",
       href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      dates: "Jan 2024 - May 2024",
       active: true,
       description:
         "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
@@ -208,7 +199,7 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "Magic UI",
+      title: "Sum Art AI",
       href: "https://magicui.design",
       dates: "June 2023 - Present",
       active: true,
@@ -240,7 +231,7 @@ export const DATA = {
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
     {
-      title: "llm.report",
+      title: "Satellite Image Classification",
       href: "https://llm.report",
       dates: "April 2023 - September 2023",
       active: true,
@@ -273,7 +264,7 @@ export const DATA = {
       video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
-      title: "Automatic Chat",
+      title: "Portfolio",
       href: "https://automatic.chat",
       dates: "April 2023 - March 2024",
       active: true,

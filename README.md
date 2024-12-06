@@ -1,46 +1,83 @@
-<div align="center">
-</div>
+# Hritisha Sahota 
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+## 👩‍💻 About Me
+Hi! I’m **Hritisha Sahota**, a third-year Computer Science Engineering student at [Bennett University](https://bennett.edu.in/), where I also serve as the Placement Coordinator for my batch. I’m a creative individual passionate about problem-solving, connecting with people, and building innovative solutions.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+Beyond academics, I’m a dancer, pianist, and an enthusiastic cook, constantly balancing my technical pursuits with creative outlets. I have a strong foundation in **Data Structures and Algorithms (DSA)** and enjoy participating in hackathons, coding challenges, and collaborative projects.
 
-# Features
+---
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## 🌟 Skills & Tools
 
-# Getting Started Locally
+### Programming Languages
+- **Python**
+- **C++**
+- **Java**
+- **JavaScript**
+- **SQL**
 
-1. Clone this repository to your local machine:
+### Technologies
+- **ReactJS**
+- **NodeJS**
+- **MongoDB**
+- **TensorFlow**
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+### Tools
+- **MATLAB**
+- **Jupyter Notebook**
+- **Big Data Analytics**
+- **Excel**
 
-2. Move to the cloned directory
+---
 
-   ```bash
-   cd portfolio
-   ```
+## 🚀 Experience
 
-3. Install dependencies:
+### Placement Coordinator @ Bennett University Career Services  
+- Coordinated recruitment activities, fostering connections between students and companies.  
+- Ensured smooth execution of placement processes and facilitated professional growth opportunities.
 
-   ```bash
-   pnpm install
-   ```
+### Business Development Intern @ Skillarena  
+- Worked on strategic planning and market research to identify growth opportunities.
 
-4. Start the local Server:
+---
 
-   ```bash
-   pnpm dev
-   ```
+## 📚 Education
+**BTech in Computer Science Engineering**  
+[Bennett University](https://bennett.edu.in/)  
+*2022 - 2026 | CGPA: 9.3/10*
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+---
 
-# License
+## 🌐 Projects
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+### 1. [A Comparative Visual Analysis of Heuristic Pathfinding Algorithms](https://github.com/hritisha-pathfinding)
+- Developed a web-based visualizer to showcase Dijkstra’s and A* Algorithms.
+- Highlighted key differences in performance and efficiency.
+
+### 2. Sum Art AI
+- A news summarization web application developed for a software project management assignment.
+- Managed the project using Jira’s Budgety tool for effective resource allocation.
+
+### 3. Customer Feedback App
+- Designed as part of a Jira portfolio environment for efficient feedback management.
+
+---
+
+## 🏆 Achievements
+- Competed in multiple hackathons, showcasing problem-solving and teamwork.
+- Successfully coordinated placement drives for over 100 students at Bennett University.
+
+---
+
+## 📫 Let’s Connect!
+- **Email**: hritisha.11@gmail.com  
+- **LinkedIn**: [linkedin.com/in/hritisha-sahota](https://linkedin.com/in/hritisha-sahota)  
+
+---
+
+## 💻 GitHub Stats
+![Hritisha’s GitHub stats](https://github-readme-stats.vercel.app/api?username=hritisha-sahota&show_icons=true&theme=radical)
+
+---
+
+### Thank you for visiting my portfolio! Feel free to explore my repositories and connect with me to collaborate on exciting projects!

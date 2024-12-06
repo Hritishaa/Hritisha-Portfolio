@@ -75,9 +75,4 @@ Beyond academics, I’m a dancer, pianist, and an enthusiastic cook, constantly 
 
 ---
 
-## 💻 GitHub Stats
-![Hritisha’s GitHub stats](https://github-readme-stats.vercel.app/api?username=hritisha-sahota&show_icons=true&theme=radical)
-
----
-
-### Thank you for visiting my portfolio! Feel free to explore my repositories and connect with me to collaborate on exciting projects!
+### Thank you for visiting my portfolio!

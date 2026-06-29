@@ -5,7 +5,9 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { DATA } from "@/data/resume";
+import { Code2Icon, TrophyIcon } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -14,16 +16,33 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="hero">
+      <section id="hero" className="relative">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+        >
+          <div className="absolute -top-12 -left-12 size-56 rounded-full bg-blue-400/30 blur-3xl animate-blob dark:bg-blue-500/20" />
+          <div className="absolute -top-8 right-0 size-56 rounded-full bg-purple-400/30 blur-3xl animate-blob [animation-delay:2s] dark:bg-purple-500/20" />
+          <div className="absolute bottom-0 left-1/3 size-56 rounded-full bg-pink-400/20 blur-3xl animate-blob [animation-delay:4s] dark:bg-pink-500/10" />
+        </div>
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
+              <div className="flex items-center gap-2">
+                <BlurFadeText
+                  delay={BLUR_FADE_DELAY}
+                  className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                  yOffset={8}
+                  text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                />
+                <span
+                  role="img"
+                  aria-label="waving hand"
+                  className="inline-block origin-[70%_70%] animate-wave text-3xl sm:text-5xl xl:text-6xl"
+                >
+                  👋
+                </span>
+              </div>
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
@@ -91,6 +110,7 @@ export default function Page() {
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
+                badges={education.badges}
                 period={`${education.start} - ${education.end}`}
               />
             </BlurFade>
@@ -105,7 +125,45 @@ export default function Page() {
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+                <Badge
+                  key={skill}
+                  className="cursor-default transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  {skill}
+                </Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="achievements">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <h2 className="text-xl font-bold">Achievements</h2>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {DATA.achievements.map((achievement, id) => (
+              <BlurFade
+                key={achievement.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
+                <Card className="flex h-full items-start gap-3 p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-foreground/10 text-foreground">
+                    {achievement.icon === "trophy" ? (
+                      <TrophyIcon className="size-4" />
+                    ) : (
+                      <Code2Icon className="size-4" />
+                    )}
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-sm font-semibold">
+                      {achievement.title}
+                    </h3>
+                    <p className="text-xs text-muted-foreground sm:text-sm">
+                      {achievement.description}
+                    </p>
+                  </div>
+                </Card>
               </BlurFade>
             ))}
           </div>
@@ -113,7 +171,7 @@ export default function Page() {
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -134,7 +192,7 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
               >
                 <ProjectCard
                   href={project.href}
@@ -154,7 +212,7 @@ export default function Page() {
       </section>
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -174,12 +232,12 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.hackathons.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                  delay={BLUR_FADE_DELAY * 17 + id * 0.05}
                 >
                   <HackathonCard
                     title={project.title}
@@ -197,7 +255,7 @@ export default function Page() {
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <BlurFade delay={BLUR_FADE_DELAY * 18}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
@@ -206,12 +264,19 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Want to chat? Just shoot me a{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={`mailto:${DATA.contact.email}`}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  direct email
+                </Link>{" "}
+                or connect on{" "}
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  className="text-blue-500 hover:underline"
+                >
+                  LinkedIn
                 </Link>{" "}
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.

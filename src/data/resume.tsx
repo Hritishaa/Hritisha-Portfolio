@@ -8,21 +8,33 @@ export const DATA = {
   location: "Noida, India",
   locationLink: "https://maps.app.goo.gl/z54BJJCRs2WBzbNk9",
   description:
-    "Creative mind with a passion for building connections and solving problems. DSA enthusiast, always exploring new ways to innovate and inspire!",
+    "Technology Apprentice at Morgan Stanley, building observability platforms at scale. CSE student at Bennett University, DSA enthusiast, and lifelong builder.",
   summary:
-    "Placement Coordinator for my batch at Bennett University, where I’m a third-year CSE student. I love connecting with new people and building meaningful relationships. A passionate dancer and piano enthusiast, I find joy in rhythm and melodies. Cooking is my creative escape, where I whip up delicious dishes. Balancing academics and hobbies, I’m always looking for ways to grow and inspire!",
+    "I'm a Technology Apprentice on the Core Observability & Trading Platform Squad at Morgan Stanley, where I architect cross-regional observability systems on Apache Kafka and Grafana Loki, serving 10,000+ global internal users across India, EMEA, and APAC. Before that, I built scalable backend systems at HERE Technologies and shipped ML platforms ranging from Vision Transformers for medical imaging to real-time emotion recognition. I'm currently a CSE student at Bennett University (CGPA 9.1/10.0), having solved 850+ DSA problems and placed in the top 9% globally on LeetCode. Outside of engineering, I'm a passionate dancer and piano enthusiast who finds her creative escape in cooking.",
   avatarUrl: "/pro.jpeg",
   skills: [
-    "DSA",
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Go",
-    "Docker",
     "Java",
     "C++",
+    "Python",
+    "SQL",
+    "JavaScript",
+    "TypeScript",
+    "Apache Kafka",
+    "Distributed Computing",
+    "AWS",
+    "GCP",
+    "Spring Boot",
+    "REST APIs",
+    "MongoDB",
+    "MySQL",
+    "Grafana Loki",
+    "TensorFlow",
+    "Keras",
+    "Vision Transformers (ViT)",
+    "CNNs",
+    "Docker",
+    "CI/CD",
+    "Linux",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -46,17 +58,11 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
+      Leetcode: {
+        name: "Leetcode",
+        url: "https://leetcode.com/u/Hritishaa/",
+        icon: Icons.leetcode,
 
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
@@ -70,6 +76,30 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "Morgan Stanley",
+      href: "https://www.morganstanley.com",
+      badges: [],
+      location: "Mumbai, India",
+      title: "Technology Apprentice – Core Observability & Trading Platform Squad",
+      logoUrl: "/morgan-stanley.svg",
+      start: "Aug 2025",
+      end: "Present",
+      description:
+        "Leading the end-to-end SDLC of internal enterprise applications for finance business processes, driving architecture strategies across India, EMEA, and APAC. Engineering data pipelines and web-scale database integrations that process millions of trade and telemetry events daily, serving 10,000+ global internal users. Architected a cross-regional observability platform using Apache Kafka and Grafana Loki, integrating custom-built solutions with third-party vendor tools. Embedded with cross-functional finance and trading stakeholders to deliver roadmaps that reduced manual auditing overhead by 50%, while triaging complex distributed system issues to ensure continuous uptime for critical trading operations.",
+    },
+    {
+      company: "HERE Technologies",
+      href: "https://www.here.com",
+      badges: [],
+      location: "Mumbai, India",
+      title: "Backend Engineering Intern",
+      logoUrl: "/here-technologies.svg",
+      start: "Jun 2025",
+      end: "Jul 2025",
+      description:
+        "Developed and launched scalable backend web applications using Java, Spring Boot, and REST APIs, improving internal system latency by 28%. Partnered with adjacent engineers to refactor high-concurrency SQL queries and build reliable cloud deployments using robust CI/CD pipelines (Docker, Jenkins).",
+    },
     {
       company: "Placement Committee",
       href: "https://www.linkedin.com/company/career-services-center-bennett-university/mycompany/",
@@ -111,7 +141,8 @@ export const DATA = {
     {
       school: "Bennett University",
       href: "https://www.bennett.edu.in",
-      degree: "BTech - CSE",
+      degree: "BTech - Computer Science and Engineering",
+      badges: ["CGPA: 9.1/10.0"],
       logoUrl: "/pro1.png",
       start: "2022",
       end: "2026",
@@ -120,6 +151,7 @@ export const DATA = {
       school: "Delhi Public School",
       href: "https://dpsgrnoida.in/dpsgrnoida/default.asp",
       degree: "Non-Medical",
+      badges: [],
       logoUrl: "/pro2.png",
       start: "2019",
       end: "2021",
@@ -128,6 +160,7 @@ export const DATA = {
       school: "Blue Ridge Public School",
       href: "http://www.blueridgepublicschool.com",
       degree: "School",
+      badges: [],
       logoUrl: "/pro3.png",
       start: "2011",
       end: "2019",
@@ -135,29 +168,41 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "MoodSync",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - May 2024",
+      title: "Lung Cancer Detection Platform",
+      href: "",
+      dates: "2025",
       active: true,
       description:
-        "MoodSync is a live AI-powered website that employs Convolutional Neural Networks (CNN) to detect and display user emotions.",
+        "Engineered complete ML data processing pipelines to evaluate and optimize hybrid deep learning architectures (Vision Transformers and CNNs) for high-resolution medical imaging. Managed the deployment lifecycle of complex ML infrastructure, preventing GPU memory bottlenecks and minimizing inference latency for end users.",
       technologies: [
-        "React Native",
-        "TensorFlow Lite",
-        "Firebase",
-        "Emotion Recognition API",
-        "Redux",
-        "Node.js",
-        "Express",
-        "SQLite",
-        "Axios",
-        "Chart.js",
+        "Vision Transformers (ViT)",
+        "CNNs",
+        "Python",
+        "ML Infrastructure",
+        "PyTorch",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "MoodSync",
+      href: "https://github.com/Hritishaa/MoodSync",
+      dates: "Real-time Emotion Recognition",
+      active: true,
+      description:
+        "Designed the architecture for a real-time emotion recognition system, aggregating and processing 10K+ image data points to achieve 77% accuracy with sub-second latency. Integrated the ML backend with interactive application layers, acting as technical lead to ensure repeatable quality and predictable system performance.",
+      technologies: [
+        "C++",
+        "TensorFlow",
+        "OpenCV",
+        "Web Integration",
       ],
       links: [
         {
           type: "Github",
           href: "https://github.com/Hritishaa/MoodSync",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
@@ -183,7 +228,7 @@ export const DATA = {
         "Axios",
         "Chart.js",
       ],
-      
+      links: [],
       image: "",
       video: "https://cdn.pixabay.com/video/2016/09/21/5398-183786939_small.mp4?download",
     },
@@ -338,6 +383,7 @@ export const DATA = {
       location: "Toronto, Ontario",
       description:
         "Earned the IBM Machine Learning with Python badge by mastering ML algorithms, model training, and data-driven insights.",
+      links: [],
       image:
         "data:image/png;base64,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",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
@@ -357,6 +403,20 @@ export const DATA = {
           href: "https://drive.google.com/file/d/1HpTHtgaXs1QfWXYl16Q7_SzloSTGh9JR/view?usp=sharing",
         },
       ],
+    },
+  ],
+  achievements: [
+    {
+      title: "Top 9% Globally on LeetCode",
+      description:
+        "Solved 850+ DSA problems in C++ and Java, ranking in the top 9% globally (2473/28K+) in LeetCode Biweekly 128 with a peak rating of 1587.",
+      icon: "code",
+    },
+    {
+      title: "Global Hackathon Builder",
+      description:
+        "Prototyped and integrated custom ML solutions during global hackathons including Google Girl Hackathon, She Builds AI, and Devpost.",
+      icon: "trophy",
     },
   ],
 } as const;

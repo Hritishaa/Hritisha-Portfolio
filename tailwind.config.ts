@@ -21,6 +21,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        display: ["var(--font-display)", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -71,11 +72,6 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        blob: {
-          "0%, 100%": { transform: "translate(0px, 0px) scale(1)" },
-          "33%": { transform: "translate(20px, -30px) scale(1.05)" },
-          "66%": { transform: "translate(-15px, 15px) scale(0.95)" },
-        },
         wave: {
           "0%": { transform: "rotate(0deg)" },
           "10%": { transform: "rotate(14deg)" },
@@ -89,7 +85,6 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        blob: "blob 10s infinite ease-in-out",
         wave: "wave 2.5s ease-in-out infinite",
       },
     },

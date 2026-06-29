@@ -82,7 +82,7 @@ export const DATA = {
       badges: [],
       location: "Mumbai, India",
       title: "Technology Apprentice – Core Observability & Trading Platform Squad",
-      logoUrl: "/morgan-stanley.svg",
+      logoUrl: "/morgan.jpg",
       start: "Aug 2025",
       end: "Present",
       description:
@@ -94,7 +94,7 @@ export const DATA = {
       badges: [],
       location: "Mumbai, India",
       title: "Backend Engineering Intern",
-      logoUrl: "/here-technologies.svg",
+      logoUrl: "/here.png",
       start: "Jun 2025",
       end: "Jul 2025",
       description:

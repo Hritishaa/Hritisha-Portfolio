@@ -16,22 +16,14 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="hero" className="relative">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
-        >
-          <div className="absolute -top-12 -left-12 size-56 rounded-full bg-blue-400/30 blur-3xl animate-blob dark:bg-blue-500/20" />
-          <div className="absolute -top-8 right-0 size-56 rounded-full bg-purple-400/30 blur-3xl animate-blob [animation-delay:2s] dark:bg-purple-500/20" />
-          <div className="absolute bottom-0 left-1/3 size-56 rounded-full bg-pink-400/20 blur-3xl animate-blob [animation-delay:4s] dark:bg-pink-500/10" />
-        </div>
+      <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
               <div className="flex items-center gap-2">
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
-                  className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                  className="font-display text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none"
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
                 />
@@ -44,7 +36,7 @@ export default function Page() {
                 </span>
               </div>
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="font-display max-w-[600px] text-base text-muted-foreground md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
